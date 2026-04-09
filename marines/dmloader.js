@@ -71,8 +71,6 @@ var CUSTOM_PARAMETERS = {
         var is_iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         var buttonHeight = 0;
         
-        buttonHeight = 42;
-        
         
         buttonHeight = 42;
         
