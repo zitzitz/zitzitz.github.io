@@ -1,1 +1,4 @@
 *.projectc binary
+*.arci binary
+*.arcd binary
+*.dmanifest binary

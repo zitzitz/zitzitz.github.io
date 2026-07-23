@@ -1,0 +1,4 @@
+include:
+  - "marines/game.arci"
+  - "marines/game.arcd"
+  - "marines/game.dmanifest"
