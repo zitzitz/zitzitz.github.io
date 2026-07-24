@@ -1,4 +1,5 @@
 *.projectc binary
+*.projectc text eol=lf
 *.arci binary
 *.arcd binary
 *.dmanifest binary
