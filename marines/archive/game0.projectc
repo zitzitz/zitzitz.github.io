@@ -13,7 +13,7 @@ title_as_file_name = arachnidland
 [display]
 width = 1920
 height = 822
-high_dpi = 0
+high_dpi = 1
 samples = 0
 fullscreen = 0
 display_profiles = /builtins/render/default.display_profilesc
