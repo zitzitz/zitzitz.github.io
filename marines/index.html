@@ -41,6 +41,9 @@
 		border: 0;
 		width: 100%;
 		vertical-align: bottom;
+		touch-action: none;
+		image-rendering: optimizeSpeed; 
+		image-rendering: -webkit-optimize-contrast;
 	}
 
 	#canvas-container {
@@ -62,6 +65,7 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		touch-action: none;
 	}
 
 		.canvas-app-progress {
@@ -180,5 +184,19 @@
 			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
 		}
 	</script>
+	<script type='text/javascript'>
+    window.addEventListener('DOMContentLoaded', function() {
+        var canvas = document.getElementById('canvas');
+        if (canvas) {
+            canvas.focus();
+            window.addEventListener('click', function() {
+                canvas.focus();
+            });
+            window.addEventListener('touchstart', function() {
+                canvas.focus();
+            });
+        }
+    });
+</script>
 </body>
 </html>

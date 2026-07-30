@@ -47,7 +47,7 @@ var CUSTOM_PARAMETERS = {
     archive_location_filter: function( path ) {
         return ("archive" + path + "");
     },
-    engine_arguments: ["--verify-graphics-calls=false",],
+    engine_arguments: ["--verify-graphics-calls=false --no-request-animation-frame",],
     custom_heap_size: 268435456,
     full_screen_container: "#canvas-container",
     disable_context_menu: true,
@@ -103,8 +103,6 @@ var CUSTOM_PARAMETERS = {
     
     
         var dpi = 1;
-    
-        dpi = window.devicePixelRatio || 1;
     
         app_container.style.width = width + "px";
         app_container.style.height = height + buttonHeight + "px";
