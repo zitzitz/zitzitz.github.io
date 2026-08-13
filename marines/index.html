@@ -198,5 +198,20 @@
         }
     });
 </script>
+<script>
+	(function() {
+		window.addEventListener('touched', function(e) {
+			if (window.requestAnimationFrame) {
+				for (let i = 0; i < 3; ++i) {
+					window.requestAnimationFrame(() => {});
+				}
+			}
+		}, {passive: true});
+
+		setInterval(function() {
+
+		}, 16);
+	})();
+</script>
 </body>
 </html>
