@@ -1,0 +1,11 @@
+*.arcd binary
+*.arci binary
+*.dmanifest binary
+*.js binary
+*.wasm binary
+*.projectc binary
+
+marines/**/*.arcd binary
+marines/**/*.arci binary
+marines/**/*.dmanifest binary
+marines/**/*.projectc binary
