@@ -1,1 +1,9 @@
-marines/** binary
+*.arcd binary
+*.arci binary
+*.dmanifest binary
+*.js binary
+*.wasm binary
+
+marines/**/*.arcd binary
+marines/**/*.arci binary
+marines/**/*.dmanifest binary
