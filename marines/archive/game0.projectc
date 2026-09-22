@@ -7,6 +7,7 @@ write_log = 0
 write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
+dependencies_metadata = 0
 custom_resources = /assets/custom
 title_as_file_name = arachnidland
 
@@ -73,10 +74,14 @@ texture_profiles = /builtins/graphics/default.texture_profiles
 verify_graphics_calls = 1
 opengl_version_hint = 33
 opengl_core_profile_hint = 1
+vulkan_version_major = 1
+vulkan_version_minor = 0
 memory_size = 512
 
 [shader]
 output_spirv = 0
+glsl_es_default_precision_float = mediump
+glsl_es_default_precision_int = highp
 
 [sound]
 gain = 1
@@ -101,6 +106,7 @@ max_resources = 1024
 repeat_delay = 0.5
 repeat_interval = 0.2
 gamepads = /builtins/input/default.gamepadsc
+gamepad_deadzone = 0.2
 game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
@@ -113,9 +119,14 @@ max_count = 128
 split_meshes = 0
 max_bone_matrix_texture_width = 1024
 max_bone_matrix_texture_height = 1024
+max_morph_target_texture_width = 1024
+max_morph_target_texture_height = 1024
 
 [mesh]
 max_count = 128
+
+[light]
+max_count = 64
 
 [gui]
 max_count = 64
@@ -150,7 +161,7 @@ localizations = en
 
 [android]
 version_code = 1
-minimum_sdk_version = 19
+minimum_sdk_version = 21
 target_sdk_version = 36
 package = com.example.todo
 gcm_sender_id = 
@@ -216,14 +227,15 @@ subpixels = 1
 
 [profiler]
 track_cpu = 0
+track_detailed_memory = 0
 enabled = 1
 sleep_between_server_updates = 0
 performance_timeline_enabled = 0
+max_sample_count = 4096
 
 [liveupdate]
 enabled = 1
 settings = /liveupdate.settings
-mount_on_start = 1
 
 [tilemap]
 max_count = 16
@@ -237,10 +249,6 @@ max_time_step = 0.033333
 [font]
 
 [native_extension]
-app_manifest = /manifest.appmanifest
-
-[event]
-event_mode = "pcall"
 
 [monarch]
 
@@ -252,4 +260,7 @@ view_width = -1
 view_height = -1
 view_x = -1
 view_y = -1
+
+[event]
+event_mode = "pcall"
 
