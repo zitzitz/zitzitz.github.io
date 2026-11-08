@@ -12,7 +12,7 @@ custom_resources = assets/custom
 title_as_file_name = starforge_survival
 
 [display]
-width = 1080
+width = 1440
 height = 1920
 high_dpi = 1
 samples = 0
@@ -250,7 +250,7 @@ max_time_step = 0.033333
 [native_extension]
 
 [spine]
-max_count = 128
+max_count = 512
 
 [event]
 event_mode = "pcall"
